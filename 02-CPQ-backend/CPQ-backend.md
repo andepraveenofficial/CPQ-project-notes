@@ -24,3 +24,33 @@
 ### Start the Application
 * `tsc -w`
 * `npm run start:dev`
+
+
+### Folder Structure
+* src
+   - index.js
+   - app.js
+   - constants.js
+   * routes
+      - user.route.js
+   * models
+      - user.model.js
+   * controllers
+      - user.controller.js
+   * middlewares
+      - user.middleware.js
+   * utils
+      - user.utils.js
+   * db
+
+### Explanation
+- **src/**: The main directory for your source code.
+  - **index.js**: The entry point of your application.
+  - **app.js**: Usually where you initialize and configure your Express application.
+  - **constants.js**: A place for storing constant values used across your application.
+  - **routes/**: Contains all your route definitions.
+  - **models/**: Contains your database models (e.g., for ORM like Sequelize or Mongoose).
+  - **controllers/**: Contains the logic for handling requests and responses.
+  - **middlewares/**: Contains middleware functions for Express.
+  - **utils/**: Utility functions and helpers.
+  - **db/**: Database-related configurations, migrations, and seeds.
